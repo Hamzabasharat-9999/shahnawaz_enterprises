@@ -1,24 +1,37 @@
-# WoodCraft Furniture
+# Shahnawaz Enterprises — Furniture & Joinery
 
-A responsive, photo-led storefront prototype for a Pakistani wood furniture workshop. Open `index.html` in a modern browser; no build step is required.
+A responsive FYP prototype for a wood-furniture business. The site brings product discovery, custom quotation, cost estimation, customer accounts, appointment requests and an admin demo into one browser-based experience.
 
-## Included
+## Run the project
 
-- Business landing page, service overview, contact information and project gallery
-- Product catalog with categories, search, stock, specifications, pricing, reviews and click/right-click photo zoom
-- Customer registration, login, saved delivery addresses and account page
-- Custom quote requests and a size, material and design estimate calculator
-- Order status tracking, delivery details and printable invoices
-- Appointment booking, product recommendations and a help-chat interface
-- Admin dashboard for products, quotations, orders, inventory, users, appointments and site content
+Open `index.html` in a modern browser. No package installation or build step is needed. Product and lifestyle photos and the font family load online.
 
-## Demo details
+## Demo access
 
-- Sample admin login: `admin@woodcraft.pk` / `admin123`
-- Demo data is saved in this browser using `localStorage`; it is not shared between devices and is not suitable for real customer information.
-- The recommendation tool uses local product matching. The help chat uses preset answers; neither connects to an AI service.
-- Product, gallery and landing-page photography loads from Unsplash. Google Fonts also load online.
-- Company details, sample projects and product prices are starter content. Replace them with verified business information before publishing.
+- Admin email: `admin@example.com`
+- Admin password: `admin123`
+- Customer accounts can be registered from the Sign in page.
+- The demo stores its data in that browser's `localStorage`; clearing the browser's site data resets the demo.
 
-For a live store, connect accounts, payments, orders, inventory and appointments to a secure backend; use a real authentication provider and an AI service if AI recommendations or chat are required.
+## Feature tour
+
+- Responsive home page, service overview, project gallery, wood guide and FAQ
+- Product catalog with category/search, product information, stock, reviews and image zoom on click or right-click
+- Customer registration, sign-in, delivery addresses, quote history, bookings and order progress
+- Custom order brief and a material, size, style and quantity estimator
+- Product recommendation matching, scripted help chat, printable invoices and appointment requests
+- Admin dashboard for products, quotations, orders, raw-material inventory, users, bookings and site content
+- GitHub Pages deployment workflow in `.github/workflows/pages.yml`
+
+## Before presenting or publishing
+
+The business name is set to Shahnawaz Enterprises. Replace the placeholder phone/email, sample product prices, stock, reviews and project gallery with information approved by the business. All sample records are demonstration content and should not be presented as verified sales or customer history. Images come from Unsplash and require an internet connection.
+
+This is a front-end academic prototype. The browser demo uses local storage, so accounts and orders are not shared across devices. The estimator is indicative; the recommender is rules-based; the chat uses preset answers. There is no real authentication server, payment processing, email/SMS notification or AI service. See `PROJECT-GUIDE.md` for the system overview, feature mapping and live-system recommendations.
+
+## Publish using GitHub Pages
+
+1. Put these site files and the `.github` folder in the repository root.
+2. In the GitHub repository, open **Settings → Pages** and set the publishing source to **GitHub Actions**.
+3. Push to the `main` branch. The included workflow uploads the static site and publishes it. GitHub displays the resulting URL under the `github-pages` deployment environment.
 
