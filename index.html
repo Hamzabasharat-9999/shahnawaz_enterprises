@@ -16,6 +16,7 @@
   <header><a class="logo" href="#/" aria-label="WoodCraft home"><span class="brand-mark">W</span><span>WOODCRAFT<small>FURNITURE &amp; JOINERY</small></span></a><nav id="nav"></nav><a class="header-cta" href="#/quote">Start a project <span>↗</span></a></header>
   <main id="app"></main>
   <footer id="foot"></footer>
+  <div id="zoom-modal" class="zoom-modal" aria-hidden="true" onclick="closeZoom(event)"><div class="zoom-panel" role="dialog" aria-modal="true" aria-label="Product photo"><button class="zoom-close" onclick="closeZoom(event)" aria-label="Close photo">×</button><img id="zoom-photo" alt=""><div class="zoom-caption"><span id="zoom-name"></span><small id="zoom-details"></small></div></div></div>
   <div id="chat"><button id="cb" onclick="toggleChat()"><span>✳</span> Ask our studio</button><div id="cw" hidden><div class="chat-head"><b>WoodCraft Studio</b><button onclick="toggleChat()" aria-label="Close">×</button></div><div id="cm"></div><div class="chat-input"><input id="ci" placeholder="Ask about wood, orders..." onkeydown="if(event.key=='Enter')sendChat()"><button onclick="sendChat()" aria-label="Send">↗</button></div></div></div>
   <div id="toast"></div><script src="app.js"></script>
 </body>

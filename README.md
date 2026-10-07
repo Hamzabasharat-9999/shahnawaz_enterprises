@@ -5,7 +5,7 @@ A responsive, photo-led storefront prototype for a Pakistani wood furniture work
 ## Included
 
 - Business landing page, service overview, contact information and project gallery
-- Product catalog with categories, search, stock, specifications, pricing and reviews
+- Product catalog with categories, search, stock, specifications, pricing, reviews and click/right-click photo zoom
 - Customer registration, login, saved delivery addresses and account page
 - Custom quote requests and a size, material and design estimate calculator
 - Order status tracking, delivery details and printable invoices
@@ -21,3 +21,4 @@ A responsive, photo-led storefront prototype for a Pakistani wood furniture work
 - Company details, sample projects and product prices are starter content. Replace them with verified business information before publishing.
 
 For a live store, connect accounts, payments, orders, inventory and appointments to a secure backend; use a real authentication provider and an AI service if AI recommendations or chat are required.
+
