@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <meta name="description" content="Thoughtfully made solid wood furniture, custom joinery and interiors by WoodCraft Pakistan.">
+  <title>WoodCraft — Furniture with a life of its own</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">Made slowly. Made to stay. &nbsp; <span>Custom orders now open</span></div>
+  <header><a class="logo" href="#/" aria-label="WoodCraft home"><span class="brand-mark">W</span><span>WOODCRAFT<small>FURNITURE &amp; JOINERY</small></span></a><nav id="nav"></nav><a class="header-cta" href="#/quote">Start a project <span>↗</span></a></header>
+  <main id="app"></main>
+  <footer id="foot"></footer>
+  <div id="chat"><button id="cb" onclick="toggleChat()"><span>✳</span> Ask our studio</button><div id="cw" hidden><div class="chat-head"><b>WoodCraft Studio</b><button onclick="toggleChat()" aria-label="Close">×</button></div><div id="cm"></div><div class="chat-input"><input id="ci" placeholder="Ask about wood, orders..." onkeydown="if(event.key=='Enter')sendChat()"><button onclick="sendChat()" aria-label="Send">↗</button></div></div></div>
+  <div id="toast"></div><script src="app.js"></script>
+</body>
+</html>
