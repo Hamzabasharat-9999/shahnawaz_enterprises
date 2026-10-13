@@ -1,0 +1,27 @@
+import {Routes,Route} from 'react-router-dom'; import MainLayout from '../layouts/MainLayout'; import Home from '../pages/Home'; import Products from '../pages/Products'; import ProductDetail from '../pages/ProductDetail'; import AdminProducts from '../pages/AdminProducts'; import Portfolio from '../pages/Portfolio'; import PortfolioDetail from '../pages/PortfolioDetail'; import AdminPortfolio from '../pages/AdminPortfolio'; import Calculator from '../pages/Calculator'; import Login from '../pages/Login'; import Register from '../pages/Register'; import Account from '../pages/Account'; import ProtectedRoute from './ProtectedRoute';
+import QuoteRequest from '../pages/QuoteRequest';
+import MyQuotations from '../pages/MyQuotations';
+import QuotationDetail from '../pages/QuotationDetail';
+import AdminQuotations from '../pages/AdminQuotations';
+import MyOrders from '../pages/MyOrders';
+import OrderDetail from '../pages/OrderDetail';
+import AdminOrders from '../pages/AdminOrders';
+import AdminDashboard from '../pages/AdminDashboard';
+import Appointments from '../pages/Appointments';
+import MyAppointments from '../pages/MyAppointments';
+import AppointmentDetail from '../pages/AppointmentDetail';
+import AdminAppointments from '../pages/AdminAppointments';
+import DeliveryTracking from '../pages/DeliveryTracking';
+import AdminDeliveries from '../pages/AdminDeliveries';
+import Reviews from '../pages/Reviews';
+import MyReviews from '../pages/MyReviews';
+import WriteReview from '../pages/WriteReview';
+import AdminReviews from '../pages/AdminReviews';
+import AdminInventory from '../pages/AdminInventory';
+import MyInvoices from '../pages/MyInvoices';
+import Invoice from '../pages/Invoice';
+import AdminInvoices from '../pages/AdminInvoices';
+import AdminInvoiceDetail from '../pages/AdminInvoiceDetail';
+import Recommendations from '../pages/Recommendations';
+import Chatbot from '../pages/Chatbot';
+export default function AppRoutes(){return <MainLayout><Routes><Route path="/" element={<Home/>}/><Route path="/products" element={<Products/>}/><Route path="/recommendations" element={<Recommendations/>}/><Route path="/chat" element={<Chatbot/>}/><Route path="/products/:slug" element={<ProductDetail/>}/><Route path="/portfolio" element={<Portfolio/>}/><Route path="/portfolio/:slug" element={<PortfolioDetail/>}/><Route path="/calculator" element={<Calculator/>}/><Route path="/appointments" element={<Appointments/>}/><Route path="/reviews" element={<Reviews/>}/><Route path="/login" element={<Login/>}/><Route path="/register" element={<Register/>}/><Route path="/account" element={<ProtectedRoute><Account/></ProtectedRoute>}/><Route path="/quote" element={<QuoteRequest/>}/><Route path="/account/quotations" element={<ProtectedRoute><MyQuotations/></ProtectedRoute>}/><Route path="/account/quotations/:id" element={<ProtectedRoute><QuotationDetail/></ProtectedRoute>}/><Route path="/account/orders" element={<ProtectedRoute><MyOrders/></ProtectedRoute>}/><Route path="/account/orders/:id" element={<ProtectedRoute><OrderDetail/></ProtectedRoute>}/><Route path="/account/orders/:orderId/delivery" element={<ProtectedRoute><DeliveryTracking/></ProtectedRoute>}/><Route path="/account/appointments" element={<ProtectedRoute><MyAppointments/></ProtectedRoute>}/><Route path="/account/appointments/:id" element={<ProtectedRoute><AppointmentDetail/></ProtectedRoute>}/><Route path="/account/reviews" element={<ProtectedRoute><MyReviews/></ProtectedRoute>}/><Route path="/account/reviews/write" element={<ProtectedRoute><WriteReview/></ProtectedRoute>}/><Route path="/account/invoices" element={<ProtectedRoute><MyInvoices/></ProtectedRoute>}/><Route path="/account/invoices/:id" element={<ProtectedRoute><Invoice/></ProtectedRoute>}/><Route path="/admin/quotations" element={<ProtectedRoute><AdminQuotations/></ProtectedRoute>}/><Route path="/admin" element={<ProtectedRoute><AdminDashboard/></ProtectedRoute>}/><Route path="/admin/orders" element={<ProtectedRoute><AdminOrders/></ProtectedRoute>}/><Route path="/admin/products" element={<ProtectedRoute><AdminProducts/></ProtectedRoute>}/><Route path="/admin/portfolio" element={<ProtectedRoute><AdminPortfolio/></ProtectedRoute>}/><Route path="/admin/appointments" element={<ProtectedRoute><AdminAppointments/></ProtectedRoute>}/><Route path="/admin/deliveries" element={<ProtectedRoute><AdminDeliveries/></ProtectedRoute>}/><Route path="/admin/reviews" element={<ProtectedRoute><AdminReviews/></ProtectedRoute>}/><Route path="/admin/inventory" element={<ProtectedRoute><AdminInventory/></ProtectedRoute>}/><Route path="/admin/invoices" element={<ProtectedRoute><AdminInvoices/></ProtectedRoute>}/><Route path="/admin/invoices/:id" element={<ProtectedRoute><AdminInvoiceDetail/></ProtectedRoute>}/></Routes></MainLayout>}

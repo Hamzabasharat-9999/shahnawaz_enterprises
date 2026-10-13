@@ -1,0 +1,11 @@
+import { Router } from 'express';
+import { adminListProducts, createProduct, updateProduct, deleteProduct } from '../controllers/productController.js';
+import { protect } from '../middleware/auth.js';
+import { requireAdmin } from '../middleware/admin.js';
+const router = Router();
+router.use(protect, requireAdmin);
+router.get('/', adminListProducts);
+router.post('/', createProduct);
+router.put('/:id', updateProduct);
+router.delete('/:id', deleteProduct);
+export default router;

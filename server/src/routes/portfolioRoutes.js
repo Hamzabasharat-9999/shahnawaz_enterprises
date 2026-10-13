@@ -1,0 +1,1 @@
+import {Router} from 'express'; import {listPortfolio,getPortfolio} from '../controllers/portfolioController.js'; const r=Router(); r.get('/',listPortfolio); r.get('/:slug',getPortfolio); export default r;
